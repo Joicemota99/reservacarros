@@ -14,16 +14,9 @@ CREATE TABLE carro (
     carro_fk INT
 );
 
-
 CREATE TABLE marcacao (
     id_marcacao INT PRIMARY KEY,
-    data TIMESTAMPTZ DEFAULT NOW(),
-    status_fk boolean default true,
-    usuario_fk INT,
-    carro_fk INT,
-    FOREIGN KEY (status_fk) REFERENCES status(id_status),
-    FOREIGN KEY (usuario_fk) REFERENCES usuario(id_usuario),
-    FOREIGN KEY (carro_fk) REFERENCES carro(id_carro)
+    data varchar(45)
 );
 
 

@@ -6,7 +6,7 @@ const pool = knex({
   connection: {
     host: 'localhost',
     user: 'postgres',
-    password: 123456,
+    password: '123456',
     port: 5432,
     database: 'reservacarros'
   }
