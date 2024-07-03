@@ -14,15 +14,11 @@ CREATE TABLE carro (
     carro_fk INT
 );
 
-CREATE TABLE status (
-    id_status INT PRIMARY KEY,
-    descricao VARCHAR(50)
-);
 
 CREATE TABLE marcacao (
     id_marcacao INT PRIMARY KEY,
     data TIMESTAMPTZ DEFAULT NOW(),
-    status_fk INT,
+    status_fk boolean default true,
     usuario_fk INT,
     carro_fk INT,
     FOREIGN KEY (status_fk) REFERENCES status(id_status),
