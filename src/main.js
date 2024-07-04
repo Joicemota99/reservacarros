@@ -35,7 +35,7 @@ btnEnviar.addEventListener('click', async evento => {
 
         // Construir os dados que você quer enviar para o backend
         const dadosParaEnviar = {
-            dataMarcada: dataSelecionada
+            datamarcada: dataSelecionada
         };
         console.log(dataSelecionada)
         // Uso do fetch para enviar dados

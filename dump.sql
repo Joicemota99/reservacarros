@@ -1,4 +1,4 @@
-CREATE DATABASE reservaCarros;
+CREATE DATABASE reservacarros;
 
 CREATE TABLE usuario (
     id_usuario INT PRIMARY KEY,
@@ -15,8 +15,8 @@ CREATE TABLE carro (
 );
 
 CREATE TABLE marcacao (
-    id_marcacao INT PRIMARY KEY,
-    data varchar(45)
+    id SERIAL PRIMARY KEY,
+    datamarcada varchar(45)
 );
 
 
